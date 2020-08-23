@@ -1,43 +1,125 @@
+html {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #0c5445;
+  margin: 0 auto;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #fdfdfd;
+  font-family: 'Roboto', serif;
+}
+
+#headLineA {
+  background: #0c5445;
+  color: #fdfdfd;
+}
+
+.text-muted {
+  margin: 0 auto;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  flex-direction: row;
+}
+
+#sortlist a{
+  padding-left: 30px;
+}
+
+li {
+  list-style: none;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  padding-top: 0;
+  color: #0c5445;
+}
+
+a:nth-child(odd) {
+  background: #a9c4bb;
+}
+
+.ingredients {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+div.ingredients div li p {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+div.ingredients div:first-of-type p{
+  font-weight: bold;
+}
+
+/* idSpecific */
+#mealList {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+main#specMain div p {
+  font-size: 16px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+main#specMain div h2 {
+  text-align: center;
+}
+
+img {
+  max-width: 1200px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
 @media screen and (max-width: 480px) {
   html {
-    margin: 0;
-    padding: 0;
     max-width: 480px;
-    width: 100%;
   }
 
   body {
-    width: 100%;
     max-width: 480px;
-    margin: 0;
-    padding: 0;
   }
 
   header {
-    background: #0c5445;
     margin: 0;
-    padding-top: 10px;
-    border-bottom: 1px solid black;
-    width: 100%;
   }
 
   h3 {
     margin-top: 10%;
-  }
-
-  div.ingredients div li p {
-    font-size: 14px;
-    font-weight: lighter;
-  }
-
-  div.ingredients div:first-of-type p{
-    font-weight: bold;
-  }
-
-  h1 {
-    text-align: center;
-    color: #fdfdfd;
-    font-family: 'Roboto', serif;
   }
 
   h2 {
@@ -50,18 +132,13 @@
   }
 
   ul {
-    margin-left: 0%;
-    padding-left: 0;
     display: flex;
     flex-direction: column;
   }
 
   li {
-    list-style: none;
     font-size: 32px;
-    font-weight: bold;
     margin-bottom: 10%;
-    font-family: 'Open Sans', sans-serif;
   }
 
   #sortList a li {
@@ -98,19 +175,11 @@
   }
 
   a {
-    text-decoration: none;
     text-align: center;
-    padding-top: 0;
-    color: #0c5445;
   }
 
   a:nth-child(odd) {
     background: #a9c4bb;
-  }
-
-  #headLineA {
-    background: #0c5445;
-    color: #fdfdfd;
   }
 
   img {
@@ -120,8 +189,7 @@
     margin-top: 3%;
   }
 
-  .ingredients {
-    display: grid;
-    grid-template-columns: 50% 50%;
+  #mealList {
+    display: block;
   }
 }
