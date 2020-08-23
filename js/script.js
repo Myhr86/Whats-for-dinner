@@ -28,9 +28,9 @@ function alphabeth(result) {
     var a = document.createElement("a");
 
     a.href = idSpecific + id;
-    a.append(li);
-    li.append(sorter[i]);
+    a.append(sorter[i]);
+    li.append(a);
 
-    ul.append(a);
+    ul.append(li);
   }
 };

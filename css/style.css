@@ -43,17 +43,27 @@ ul {
   flex-direction: row;
 }
 
-#sortlist a{
-  padding-left: 30px;
+li {
+  font-size: 32px;
+  margin-bottom: 10%;
+  background: white;
+  text-align: center;
+  list-style: none;
 }
 
-li {
-  list-style: none;
-  font-size: 32px;
-  font-weight: bold;
+li:nth-child(even) {
+  background: white;
   margin-bottom: 5%;
-  padding-top: 5%;
-  font-family: 'Open Sans', sans-serif;
+}
+
+li:nth-child(odd) {
+  background: white;
+  padding-bottom: 5%;
+  margin-bottom: 0;
+}
+
+.ingredients li:nth-child(odd) {
+  background: none;
 }
 
 a {
@@ -63,7 +73,7 @@ a {
 }
 
 a:nth-child(odd) {
-  background: #a9c4bb;
+  background: none;
 }
 
 .ingredients {
@@ -139,6 +149,23 @@ img {
   li {
     font-size: 32px;
     margin-bottom: 10%;
+    background: white;
+    text-align: center;
+  }
+
+  li:nth-child(even) {
+    background: white;
+    margin-bottom: 5%;
+  }
+
+  li:nth-child(odd) {
+    background: #a9c4bb;
+    padding-bottom: 5%;
+    margin-bottom: 0;
+  }
+
+  .ingredients li:nth-child(odd) {
+    background: none;
   }
 
   #sortList a li {
@@ -179,7 +206,7 @@ img {
   }
 
   a:nth-child(odd) {
-    background: #a9c4bb;
+    background: none;
   }
 
   img {
